@@ -1,10 +1,10 @@
-#!/bin/bash
+!/bin/bash
 #########################################################
 # Uncomment and change the variables below to your need:#
 #########################################################
 
 # Install directory without trailing slash
-#install_dir="/home/$(whoami)"
+#install_dir="/kaggle/working/stable-diffusion-webui"
 
 # Name of the subdirectory
 #clone_dir="stable-diffusion-webui"
@@ -44,5 +44,8 @@
 
 # Uncomment to disable TCMalloc
 #export NO_TCMALLOC="True"
+
+# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
+export COMMANDLINE_ARGS="--xformers --enable-insecure-extension-access"
 
 ###########################################
